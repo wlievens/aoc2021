@@ -1,0 +1,8 @@
+[tool.poetry]
+name = "aoc2021"
+version = "0.1.0-dev"
+description = ""
+authors = ["Wouter Lievens <lievnswouter@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
