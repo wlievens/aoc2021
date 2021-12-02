@@ -18,3 +18,17 @@ for direction, units in commands:
     if direction == 'up':
         depth -= units
 print('Part One', horizontal, depth, horizontal * depth)
+
+# Part Two
+aim = 0
+horizontal = 0
+depth = 0
+for direction, units in commands:
+    if direction == 'forward':
+        horizontal += units
+        depth += aim * units
+    if direction == 'down':
+        aim += units
+    if direction == 'up':
+        aim -= units
+print('Part Two', horizontal, depth, horizontal * depth)
